@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #fafafa;
+  color: black;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 60px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #31b64e;
+}
+
+li a.active {s
+  color: black;
+  background-color: #04AA6D;
+}
+section { 
+  display: block;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>TRAVEL-DIARIES</h1>
+  <p>A website for travel stories</p>
+</div>
+
+<ul>
+  <li><a href="#home">About</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="signup.html">SignUp</a></li>
+  <li><a href="page.html">Home</a></li>
+</ul>
+
+<section>
+  <img class="mySlides" src="img3.jpg" style="width:100%" style ="height: 5%">
+  <img class="mySlides" src="img4.jpg" style="width:100%" style ="height: 5%">
+  <img class="mySlides" src="img5.jpg" style="width:100%" style ="height: 5%">
+</section>
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+
+<section>
+ <center> <h1>Travel TRAVEL-DIARIES</h1>
+  <p> this is website where you can different travel places in a particular city
+    <br>
+  you can get famous tourist places in popular cities like Hyderabad, Mumbai, Bangalore etc..
+  </p></center>
+</section>
+
+
+<footer>
+  <p>Designed by : NIKITHA BASA<br>
+  Contact - nikitha@gmail.com</p>
+</footer>
+
+
+</body>
+</html>
